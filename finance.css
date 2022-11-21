@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,900;1,700&family=Red+Hat+Display&display=swap');
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+    font-size: 10px;
+}
+html, body{
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    max-width: 100vw;
+    height: 100vh;
+   } 
+body{
+    width: 100%;
+    font-family: 'Red Hat Display', sans-serif;
+}
+/* SELF-SERVICE SECTION */
+
+.dropBtn {
+   border-radius: 15px;
+   border: none;
+   background-color: #db353a;
+   cursor: pointer;
+   padding: 5% 10% 6% 10%;
+   font-size: 16px;
+   color: #ffffff;
+   text-decoration: none;
+   font-family: 'Montserrat', sans-serif;
+   margin: 2.5rem;
+   font-size: 1.3rem;
+ }
+ .dropDown {
+   /* display: inline-block; */
+   margin: 1rem 0 0 26rem ;
+   width: 18rem;
+   /* margin-bottom: 1rem; */
+   position: absolute;
+   /* z-index: 1; */
+   right: 24rem;
+ }
+.dropBtn:hover{
+     background-color: white;
+     color: #db353a;
+     border: 2px solid  #db353a;
+     padding: 0.8rem 1.5rem;
+}
+ .dropContent {
+   display: none;
+   background-color: #CD1818;
+   width: 12rem;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   margin: 1.5rem;
+   text-align: left;
+   border-radius: 15px;
+   padding-left: 1rem;
+   position: absolute;
+ }
+ .dropContent .link {
+   color: #fff;
+   padding: 1rem;
+   text-decoration: none;
+   display: block;
+ }
+ .dropContent .link:hover {
+   background-color: #fff;
+   color: #CD1818;
+   width: 12rem;
+   border-radius: 15px;
+   margin-left: -1rem;
+   font-weight: 700;
+   text-align: center;
+ }
+ .show{
+   display: block;
+ }
+ /* .dropDown:hover .dropContent { 
+   display: block;
+ }
+
+/* END OF SECTION */
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0rem 0rem 0rem;
+    /* overflow:hidden; */
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: 1px solid gray; 
+}
+.left{
+    align-items: center;
+    justify-content: space-between;
+    padding-inline-start: 5rem;
+    
+}
+
+
+.left a{
+    text-decoration: none;
+    color: black;
+    padding-inline: 2rem;
+    font-weight: 500;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+.active span{
+    color: #db353a;
+    font-size: 15px;
+    font-weight: 900; 
+}
+.active {
+    color: black;
+    font-size: 15px;
+    font-weight: 900;
+}
+.right{
+    padding-inline: 5rem;
+    justify-content: space-evenly;
+    margin-bottom: 0.8rem;
+}
+.sign{
+    border-style: solid;
+    border-color: #db353a;
+    border-radius: 15px;
+    width: 10rem;
+    padding: 8px;
+    margin-right: 1rem;
+    background-color: white;
+}
+.sign a{
+    text-decoration: none;
+    color: #db353a;
+}
+.regis{
+    border-style: solid;
+    border-color: #db353a;
+    border-radius: 15px;
+    width: 10rem;
+    padding: 8px;
+    margin-right: 1rem;
+    background-color: #db353a;
+}
+.regis a{
+    text-decoration: none;
+    color: white;
+}
+.sign:hover{
+    box-shadow: 0 0 0 0;
+    background-color: #db353a;   
+}
+.sign a:hover{
+    color: white;
+}
+.regis:hover{
+    box-shadow: 0 0 0 0; 
+    background-color: white;
+}
+.regis a:hover{
+    color: #db353a;
+}
+.java{
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+}
+.landing{
+    display: flex;
+    margin-top: 6rem;
+    flex-direction: row;
+    width: 100%;
+}
+
+.content{
+       display: flex;
+       flex-direction: column;
+        flex-wrap: wrap;
+        width: 50%; 
+        margin-left: 7.2rem;
+        margin-top: 1rem;
+        align-content: right;
+}
+.content h1{
+   font-size: 40px;
+    font-weight: bold;
+
+}
+.content h2{
+    margin-top: 0;
+    color: #db353a;
+    font-size: 20px;
+}
+.content h2 span{
+    color: black;   
+}
+.content p{
+    font-size: medium;
+    max-width: 80%;
+}
+.content p span{
+    color: #db353a;
+}
+.slideshow-container{
+    display: flex;
+    flex-direction: row;
+}
+.mySlidesfade{
+display: flex;
+flex-direction: row;
+align-items: right;
+}
+ h3{
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+}
+.features{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    flex-wrap: wrap;
+    align-content: space-between; 
+}
+.features div{
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+    flex-basis: 30%;
+    margin-bottom: 6rem;
+}
+.cus{
+    background-color: black;
+    color: white;
+}
+
+.features div:hover{
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    line-height: 5rem;
+    padding-top: 4rem; 
+}
+
+.One{
+    margin-left: 15rem;   
+}
+.One h1{
+    font-size: 40px;   
+}
+.contact{
+    margin-right: 8rem;
+}
+.Company{
+    margin-left: 6rem;
+}
+.contact p{
+    color: grey;
+    font-size: 15px;
+}
+.Company p{
+    color: grey;
+    font-size: 15px;
+}
+.contact span{
+    text-decoration: underline;
+}
+.Company span{
+text-decoration: underline;
+}
+.text{
+    position:absolute;
+     display: table;
+     overflow: hidden;
+    color:#fff;
+    top:0;
+    left:0;
+    margin-left: 5rem;
+    padding-top: 5rem;
+  }
+.text h1{
+      font-size: 30px;
+      text-align: center;
+      font-family: 'Red Hat Display', sans-serif;
+      font-style: bolder;
+      font-weight: 800;
+      margin-bottom: 12rem;
+      line-height: 2.4rem; 
+  }
+  .text h2{
+      font-size: 25px;
+      text-align: center;
+      font-family: 'Red Hat Display', sans-serif;
+      font-style: bolder;
+      font-weight: 800;
+      line-height: 2.4rem; 
+      margin-bottom: 2rem;
+  }
+  .text p{
+      font-size: 15px;
+      text-align: center;
+      font-family: 'Red Hat Display', sans-serif;
+      font-style: bolder;
+      font-weight: 800;
+      line-height: 3.2rem; 
+  }
+
+.slider-frame{
+    overflow: hidden;
+    height: 500px;
+    width: 60%;
+    margin-left: 0px;
+    margin-top: 0px;
+    position: relative;
+}
+
+/*-----------SLIDE ANIMATION----------*/
+@keyframes slide_animation{
+    0% {left: 0px;}
+    10% {left: 0px;}
+    20% {left: 1200px;}
+    30% {left: 1200px;}
+    40% {left: 2400px;}
+    50% {left: 2400px;}
+    60% {left: 1200px;}
+    70% {left: 1200px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left: 0px;}
+}
+
+
+.slide-images{
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    animation-name: slide_animation;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+.img-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+    
+}
+
+/*--------END OF ANIMATION------*/
+
+
+.added{
+    display: flex;
+    margin-top: 6rem;
+    flex-direction: row;
+    width: 100%;
+}
+
+.added-writeup{
+       display: flex;
+       flex-direction: column;
+        flex-wrap: wrap;
+        width: 50%; 
+        margin-left: 7.2rem;
+        margin-top: 6rem;
+        align-content: right;
+        font-family: 'Red Hat Display'sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.5rem;
+        word-spacing: 0.2em;
+        line-height: 1.8rem;
+}
+ .added-writeup1{
+    display: flex;
+    flex-direction: column;
+     flex-wrap: wrap;
+     width: 50%; 
+     margin-left: 0.1rem;
+     margin-top: 6rem;
+     align-content: right;
+     font-family: 'Red Hat Display'sans-serif;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 1.5rem;
+     word-spacing: 0.2em;
+     line-height: 1.8rem;
+}
+.added-writeup h2{
+    color:#D61c5B;
+    font-size: 3rem;
+}
+
+.added-writeup1 span{
+    color:#db353a;
+    font-size: 3rem;
+}
+.added-image{
+       display: flex;
+       flex-direction: column;
+        flex-wrap: wrap;
+        width: 60%; 
+        margin-left: 7.2rem;
+        margin-top: 1rem;
+        font-family: 'Red Hat Display', sans-serif;
+}
+
+.added-imagess{
+    display: flex;
+    flex-direction: column;
+     flex-wrap: wrap;
+     width: 60%; 
+     margin-left: 30rem;
+     margin-right: 10rem;
+     margin-top: 1rem;
+     font-family: 'Red Hat Display', sans-serif;
+}
+.added2{
+    display: flex;
+    margin-top: 6rem;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10rem;
+}
+
+.added3{
+    display: flex;
+    margin-top: 6rem;
+    flex-direction: row;
+    width: 100%;
+}
+.added-writeups{
+    display: flex;
+    flex-direction: column;
+     flex-wrap: wrap;
+     width: 60%; 
+     margin-left: 10rem;
+     margin-top: 6rem;
+     align-content: right;
+     font-family: 'Red Hat Display'sans-serif;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 1.5rem;
+     word-spacing: 0.2em;
+     line-height: 1.8rem;
+}
+.added-writeups h2{
+ color: #2D9CDB;
+ font-size: 3rem;
+}
+.added-images{
+    display: flex;
+    flex-direction: column;
+     flex-wrap: wrap;
+     width: 50%; 
+     margin-right: 14rem;
+     margin-top: 1rem;
+     font-family: 'Red Hat Display', sans-serif;
+}
+.customers{
+    background-color: #f9f9f9;
+}
+.customers h1{
+text-align: center;
+font-size: 30px;
+padding-top: 6rem;
+}
+.customers h4{
+    margin-left: 20rem;
+    font-size: 20px;
+    }
+    
+    .im-container p{
+        font-size: 22px;
+    }
+    
+    .im-container img{
+        margin-left: 23rem;
+    }
+    
+    .im-container{
+            height: 800px;
+            width: 1200px;
+            position: relative;
+            float: left; 
+            display: block;
+        }
+    
+        .slided-images{
+            width: 3600px;
+            height: 800px;
+            margin: 0 0 0 -2400px;
+            position: relative;
+            animation-name: slided_animation;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-play-state: running;
+        }
+        
+    
+        @keyframes slided_animation{
+            0% {left: 0px;}
+            10% {left: 0px;}
+            20% {left: 1200px;}
+            30% {left: 1200px;}
+            40% {left: 2400px;}
+            50% {left: 2400px;}
+            60% {left: 1200px;}
+            70% {left: 1200px;}
+            80% {left: 0px;}
+            90% {left: 0px;}
+            100% {left: 0px;}
+        }
+        
+    
+        .slided-frame{
+            overflow: hidden;
+            height: 500px;
+            width: 60%;
+            margin-left: 40rem;
+            margin-right: 20rem;
+            margin-top: 1rem;
+            position: relative;
+        }
+
+
+@media (max-width: 750px) {
+.container, .landing {
+    flex-direction: column;
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+}
+.right{
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding-top: 1rem;
+}
+.slider-frame, .content{
+    margin-top: 4rem;
+    width: 100%;
+}
+.content h2{
+    margin-right: 8rem;
+}
+.features{
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+}
+.added{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.added-image img{
+    width: 250px;
+    
+}
+.added2{
+    flex-direction: column-reverse;
+    display: flex;
+    
+}
+.added-images img{
+    width: 250px;
+    
+}
+.added-writeups{
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-left: 3rem;
+  
+}
+.footer, .One, .contact, .Company{
+    flex-direction: column;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem; 
+}
+.One h1{
+    font-size: 20px;
+}
+}
+ @media (max-width: 1280px) {
+    .left a{
+    padding-inline-start: 2rem;
+    margin-inline: 2rem;
+ } 
+} 

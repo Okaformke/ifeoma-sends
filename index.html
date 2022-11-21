@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn to Code</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <em><marquee style="font-size: 20px; color: goldenrod; padding: 3px;">Having challenges with your code, in need of a code buddy and mentoring?...Look no further as we are here to HELP with your codes!!!</marquee></em>
+    <div class="main">     
+   <div class="top">
+    <nav class="nav">
+        <div class="logo">
+            <a href="about.html">Nkem page</a>
+            </div>
+            <ul>
+                <li class="nav-item" ><a href="Contact.html">Contact Us</a></li>
+                <li class="nav-item"><a href="about.html">About Us</a></li>
+                <li class="nav-item"><a href="finance.html">Our Finance Team</a></li>
+            </ul>
+        </nav>
+<h1>Get <span>HELP</span> with <span>Coding</span> from our Engineers</h1>
+<p>30-day, hassle-free money back guarantee</p>
+<p>Gain access to our full library of tutorials along with expert code reviewers.</p>
+<p>Perfect for any developers who are serious about honing their skills.</p>
+    </div>
+<div class="divide">
+       <div class="left">
+<h2>Monthly Subscription</h2>
+<p>$29 per month</p>
+<p>Full access for less than 1$ a day</p>
+<button class="open-button" onclick="openForm()">Sign Up</button>
+<div class="form-popup" id="myForm">
+  <form action="" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw">
+    
+    <label for="employment-type">Employment</label><br>
+    <select id="employ" name="employ" form="employform">
+        <option value="word">fulltime</option>
+         <option value="word">partime</option>
+         <option value="word">others</option>
+        </select><br>
+
+        <label for="mentor">Need a mentor</label><br>
+    <select id="employ" name="employ" form="employform">
+        <option value="word">Yes</option>
+         <option value="word">No</option>
+        </select>
+    <button type="submit" id="btn" onclick="alert('A link has been sent to your email to complete signup')">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+</div>
+
+       <div class="right">
+        <img src="asset/istockphoto-1337451943-612x612.jpg" alt="" width="330px">
+        <div class="overlay">
+            <div class="text">
+        <h2>Why Us</h2>
+            <p>Tutorials by industry experts.......</p>
+            <p>Peer and expert code review..........</p>
+            <p>Coding exercises.....................</p>
+            <p>Access to our GitHub repos...........</p>
+            <p>Community Forum.......................</p>
+            <p>New Videos every week..................</p>
+</div>
+</div>
+</div>
+<div class="center">
+    <h2>Find a Community</h2>
+    <p>Get a Mentor and be mentored</p>
+    <p>Learn more with Projects</p>
+    <button>Click here</button>
+           </div>
+</div>
+ </div>
+</body>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+
+</script>
+</html>
+
+    
+    
+            

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <div class="container">
+        <div class="my-image">
+<img src="asset/bab (2).jpg" alt="my self" width="200px" class="bab">
+<h2>Nkem Page HELPS to connects all coders across the globe in a glimpse</h2>
+<p>We understand that coding might be tasky sometimes and very vast and just like you, <br>we experienced the "not-able to get the right searches", lengthy codes, and lots more.., <br>but we are always ready to provide the necessary assitance including mentoring and live projects.</p>
+<p>Interesting right???Worry no more as we are here to HELP!</p>
+<span><em>See Below Images Of Some Of Our Projects....</em></span>
+        </div>
+       
+        <div class="images">
+<div class="image1">
+    <img src="asset/Screenshot 2022-09-08 100355.png" alt="watch" style="width: 100%;"onclick="myFunction(this);">
+    <div id="text">
+<h4>Simple Wristwatch by Nkem Okafor</h4>
+<p>A functional working clock with javscript</p>
+<p>Click on the image to expand</p>
+    </div>
+</div>
+<div class="image1">
+    <img src="asset/Screenshot 2022-09-08 100605.png" alt="design" style="width: 100%;" onclick="myFunction(this);" >
+    <div id="text">
+        <h4>Data Analytics Design template by Nkem Okafor</h4>
+        <p>Discover how Data can be used to make decisions<br>to improve your customer's experience and increase profit margins in an Organization</p>
+        <p>Click on the image to expand</p>
+    </div>
+</div>
+<div class="image1">
+    <img src="asset/Screenshot 2022-09-08 100754.png" alt="coding" style="width: 100%;" onclick="myFunction(this);">
+    <div id="text">
+        <h4>Coding challenge by Nkem Okafor</h4>
+        <p>Join Nkem's community on honning your skills in coding</p>
+        <p>Click on the image to expand</p>
+    </div>
+</div>   
+
+<!-- The expanding image container -->
+<!-- it can be placed in the middle or any other place but i placed it here so that wen the imag is clicked, it expands ans shows in he middle btw my six images so that userswill not have to stroll down b4 seeing the expanded image..my image  -->
+<!-- my image size is big copuled wwith the writeup -->
+<div class="contain">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn"></span>
+    <!-- Expanded image -->
+    <!-- you can use any percentage as this will tell u how large you want the image to display -->
+    <img id="expandedImg" style="width:80%">
+  </div>
+
+
+<div class="image1">
+    <img src="asset/Screenshot 2022-09-08 100903.png" alt="calculator" style="width: 100%;" onclick="myFunction(this);">
+    <div id="text">
+        <h4>A Simple Calculator by Nkem Okafor</h4>
+        <p>A functional calculator with javascript made easy</p>
+        <p>Click on the image to expand</p> 
+    </div>
+</div>   
+<div class="image1">
+    <img src="asset/Screenshot 2022-09-08 114233.png" alt="online" style="width: 100%;" onclick="myFunction(this);">
+    <div id="text">
+        <h4>An Online Banking design template by Nkem Okafor</h4>
+        <p>A platform made easy where customers can do transfers, and lots more...</p>
+        <p>Click on the image to expand</p> 
+    </div>
+</div>  
+<div class="image1">
+    <img src="asset/Screenshot 2022-09-08 114344.png" alt="one" style="width: 100%;" onclick="myFunction(this);" >
+    <div id="text">
+        <h4>An Online design template by Nkem Okafor</h4>
+        <p>A platform where customers can update data, make request and lay complaints</p>
+        <p>Click on the image to expand</p> 
+    </div>
+</div>
+        </div>
+
+    </div>
+
+    <script>
+        function myFunction(imgs) {
+             // Get the expanded image
+          var expandImg = document.getElementById("expandedImg");
+          // Use the same src in the expanded image as the image being clicked on from the grid
+          expandImg.src = imgs.src;
+          // Show the container element (hidden with CSS)
+          expandImg.parentElement.style.display = "block";
+        }
+        </script>
+
+
+</body>
+
+</html>
